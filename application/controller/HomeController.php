@@ -8,7 +8,7 @@ class HomeController extends LisMyController {
     public function indexAction() {
         echo '<p><red>home index action</red><p><p>';
         var_dump(LisConfig::get('app.redis.host'));
-        LisView::render('home/index', '');
+        LisView::render('home/index');
     }  
 
     public function userInfoAction() {
